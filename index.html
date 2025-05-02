@@ -4,37 +4,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- configura a codificação de caracteres do navegador para o UTF-8-->
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <!-- Adiciona o ícone de aba de navegador-->
+
+<link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/menu.css"> 
+
     <title>HOME - IFSP - Pirituba - DWBA4</title>
-    <!-- Adiciona o título na aba do navegador-->
+
     <script src="js/disabling.js"></script>
 </head>
 
 <body>
 
     <header id="cabecalho">
-        <!-- Indica o cabeçalho do nosso documento-->
-
-        <!--div id="my_menu" align="right">
-	<a href="#">HOME</a> | <a href="#">CONTATO</a> | <a href="sobre.html">SOBRE</a>
-  </div-->
 
         <nav>
             <object width="100%" height="65px" data="menu.html"></object>
         </nav>
 
         <img src="Imagens/Logo.jpg" alt=" " />
-        <!-- anexa imagem e texto alternativo-->
+
 
         <nav>
-            <!-- Indica que o conteúdo é composto de links de navegação-->
+
             <p><b>Cursos</b></p>
             <ul>
-                <!-- Estrutura de lista não ordenada -->
+
                 <li>
-                    <!-- Item de lista -->
+
                     <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
                 </li>
                 <li>
@@ -54,43 +51,33 @@
 
     </header>
 
-    <main>
-        <!-- indica que é o conteúdo principal dessa página -->
+  <main class="main-grid">
+    <aside class="aside-grid">
+        <h2>Eventos</h2>
+        <figure>
+            <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" class="evento-img">
+            <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
+        </figure>
+    </aside>
 
-        <aside>
-            <!-- indica que é um conteúdo a parte do princial, auxiliar-->
-            <p><b>Eventos</b></p>
-            <figure>
-                <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="50%" height="50%">
-                <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
-            </figure>
-        </aside>
-
-
+    <div class="section-grid">
         <section>
-            <!-- Indica que é uma seção/parte do documento-->
-            <h1>
-                Sobre a Biblioteca
-            </h1>
-
+            <h2>Sobre a Biblioteca</h2>
             <article>
-                <!-- Indica que o conteúdo é completo, ou seja, não depende d eoutros trechos do documento para ter significado -->
-                <img src="Imagens/library.jpeg" alt="Biblioteca" />
-                <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
-                <h6>
-                    <!-- Título de terceiro nível -->
-                    Publicado: Quarta-feira, 14 de agosto de 2019
-                </h6>
+                <img src="Imagens/library.jpeg" alt="Biblioteca" class="biblioteca-img">
+                <h3>Conheça os novos títulos disponíveis na nossa biblioteca</h3>
+                <p class="publicacao-data">Publicado: Quarta-feira, 14 de agosto de 2019</p>
             </article>
         </section>
+        
         <section>
-            <h1>
-                Conheça o SUAP
-            </h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Conheça o SUAP</h2>
+            <div class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
-
-    </main>
+    </div>
+</main>
 
     <footer>
         <br><br>
@@ -103,13 +90,9 @@
         </p>
     </footer>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/8.8.1/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
 
 </body>
